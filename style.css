@@ -1,0 +1,286 @@
+  body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f3f3f3;
+      color: #333;
+  }
+
+  .container {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .input {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.input input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 70%;
+    max-width: 300px; /* Limit maximum width */
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.input input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 0.7); /* Highlight on focus */
+}
+
+.input button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.input button:hover {
+    background-color: #388e3c;
+}
+
+
+  .weather-box {
+      border: 1px solid #ccc;
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+
+  .weather-box.sunny {
+      background-image: url('https://media3.giphy.com/media/1BFp39m341jTlkIWhw/giphy.webp?cid=ecf05e47ax3dkeqao3s5bcrtqk9oiogzaca27ph9xo80ai2l&ep=v1_gifs_search&rid=giphy.webp&ct=g');
+      /* Other styles for sunny weather */
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* opacity: 0.5; */
+  }
+
+  .weather-box.rainy {
+      background-image: url('https://media4.giphy.com/media/t7Qb8655Z1VfBGr5XB/200.webp?cid=790b7611t8ucr6rfb4yaw5prnf6c050a5tm872wkrcny3zwv&ep=v1_gifs_search&rid=200.webp&ct=g');
+      /* Other styles for rainy weather */
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .weather-box.cloudy {
+      background-image: url('https://media0.giphy.com/media/EdMfNhqNxKCgkaZEun/200.webp?cid=790b76114t03fen2r0obthqa9890lxnntx10tgmy9kclbqd0&ep=v1_gifs_search&rid=200.webp&ct=g');
+      /* Other styles for cloudy weather */
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .weather-box.haze {
+      background-image: url('https://media2.giphy.com/media/KPtOFhewRGWl2/200.webp?cid=790b7611yvc2g7scxw5gxw99k3emvqihsg4w97g6l4rhbbl4&ep=v1_gifs_search&rid=200.webp&ct=g');
+      /* Other styles for haze weather */
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .weather-box.drizzle {
+      background-image: url("https://media3.giphy.com/media/cULT5pSkrWP6Gdpe3V/giphy.webp?cid=ecf05e47o55oopq9qrfyww81hbacpxwmb75sqakumg48n3o4&ep=v1_gifs_search&rid=giphy.webp&ct=g");
+      /* Other hazy background styles */
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+
+
+
+
+
+  .weather-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .weather-info>div {
+      margin-bottom: 10px;
+  }
+
+  .temperature {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      gap: 18rem;
+  }
+
+  .map-container {
+      margin-top: 20px;
+  }
+
+  .map-container a {
+      text-decoration: none;
+  }
+
+
+  .weather {
+      display: flex;
+      font-weight: 700;
+  }
+
+  .icon.weather-animation {
+      width: 100px;
+      height: 100px;
+      background-color: #fff6e6;
+      /* Example background color */
+      border-radius: 50%;
+      /* Make it a circle */
+      margin-top: 20px;
+      animation: weatherAnimation 5s linear infinite;
+      margin-left: 12.5rem;
+      /* Adjust animation duration */
+  }
+
+  @keyframes weatherAnimation {
+      0% {
+          transform: translateY(0);
+      }
+
+      50% {
+          transform: translateY(-10px);
+      }
+
+      100% {
+          transform: translateY(0);
+      }
+  }
+
+  .icon img {
+      width: 100px;
+      height: 100px;
+  }
+
+
+
+  /* Mobile first styles */
+
+  /* Adjustments for smaller screens */
+  /* Mobile first styles */
+
+  /* Adjustments for smaller screens */
+  /* Mobile first styles */
+
+/* Adjustments for smaller screens */
+/* Mobile first styles */
+
+/* Adjustments for smaller screens */
+/* Mobile first styles */
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 450px) {
+    body {
+        height: 100vh;
+    }
+
+    .container {
+        padding: 0;
+        /* Reduce padding */
+        max-width: 100%;
+        /* Adjust max width for smaller screens */
+        height: 90vh;
+    }
+
+    .input {
+        flex-direction: column;
+        /* Stack input elements vertically */
+        align-items: center;
+        /* Center input elements */
+        margin-top: 2rem;
+        /* Reduce top margin */
+    }
+
+    .input input {
+        width: calc(100% - 20px);
+        /* Make input full width with margin */
+        margin-bottom: 10px;
+        /* Add space between input and button */
+    }
+
+    .input button {
+        width: calc(100% - 20px);
+        /* Make button full width with margin */
+        margin-bottom: 10px;
+        /* Add space between button and next element */
+        margin-top: 1rem;
+    }
+
+    .weather-box {
+        padding: 10px;
+        /* Reduce padding */
+        margin-top: 10px;
+        background-size: cover;
+        /* Reduce top margin */
+        height: 70vh;
+        margin-top: 4rem;
+    }
+
+    .icon.weather-animation {
+        margin: 25px auto;
+        /* Center horizontally */
+    }
+
+    .weather-info>div {
+        margin-bottom: 5px;
+        /* Reduce margin between weather info elements */
+    }
+
+    .temperature {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* Center vertically */
+        height: auto;
+        /* Set height to auto */
+        gap: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        /* Stack temperature details vertically with reduced gap */
+        background-color: #f0f0f0;
+        /* Add background color */
+        padding: 10px;
+        /* Add padding */
+        border-radius: 5px;
+        /* Add border radius */
+    }
+
+    .temperature > div {
+        margin-top: 0.5rem;
+        /* Add space between temperature details */
+    }
+
+    .map-container {
+        margin-top: 2rem;
+        /* Reduce top margin */
+    }
+
+    .weather {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+
