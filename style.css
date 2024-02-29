@@ -229,7 +229,7 @@
         margin-top: 10px;
         background-size: cover;
         /* Reduce top margin */
-        height: 70vh;
+        height: 80vh;
         margin-top: 4rem;
     }
 
@@ -252,8 +252,8 @@
         height: auto;
         /* Set height to auto */
         gap: 1rem;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
         /* Stack temperature details vertically with reduced gap */
         background-color: #f0f0f0;
         /* Add background color */
@@ -269,7 +269,7 @@
     }
 
     .map-container {
-        margin-top: 2rem;
+        margin-top: 1rem;
         /* Reduce top margin */
     }
 
